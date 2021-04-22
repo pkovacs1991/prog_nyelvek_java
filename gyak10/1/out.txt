@@ -1,0 +1,7 @@
+article
+body
+conclusion
+Jo: Of M; 107 [1-107] referenced in article: article
+au: titl; 120 [1-120] referenced in article: article
+eauthor: etitle; 110( PDF size: 50) [1-110] referenced in article: article
+pauthor: ptitle; 116 [1-116] referenced in article: article
