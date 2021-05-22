@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <style type="text/css">
+  pre > code
+  {
+      all: unset;
+  }
+  
+  code
+  {
+      color: blue;
+      font-size: 14px;
+      white-space: pre;
+      border-radius: 3px;
+      font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+      padding: 2px 4px;
+  
+      display: inline-block;
+  
+      background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #e4e4e4, #ffffff);
+  }
+  
+  
+  pre
+  {
+    	margin-left: 3em;
+    	padding: 0.5em;
+  
+    	border: 0.1em green solid !important;
+  
+      display: inline-block;
+  }
+  
+  table {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 24px;
+      border-spacing: 0;
+      border-bottom: 2px solid black;
+      border-top: 2px solid black;
+      width: auto !important;
+  }
+  
+  table th {
+      padding: 3px 10px;
+      background-color: white;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid black;
+  }
+  
+  table td {
+      padding: 3px 10px;
+      border-top: none;
+      border-left: none;
+      border-bottom: none;
+      border-right: none;
+  }
+  
+  </style>
+</head>
+<body>
+<h1 id="általános-tudnivalók">Általános tudnivalók</h1>
+<p>Az alábbi feladatleírásban azon nyelvi elemek (osztályok, metódusok stb.) leírása szerepel, amelyeknek kötelező megjelennie a megoldásban.</p>
+<ul>
+<li>Megengedett a megnevezetteken kívül további metódusok, adattagok felvétele, ha szükséges; ezek legyenek rejtettek.</li>
+<li>Ha a feladatleírásban meg van adva egy nyelvi elem neve, kötelező azt használni, különben szabadon választható.
+<ul>
+<li>Szabad választás esetén is betartandóak a Java nyelv konvenciói.</li>
+</ul></li>
+<li>A megadottakon kívül egyetlen osztály se tartalmazzon más publikus metódust vagy adattagot, illetve egyik csomag se tartalmazzon más osztályokat.</li>
+<li>A program ne írjon ki semmit, amire a feladat nem ad utasítást.</li>
+<li>Ha bármilyen kérdés, észrevétel felmerül, azt a felügyelőknek kell jelezni, <em>NEM</em> a diáktársaknak!</li>
+</ul>
+<p>A megoldás értékelése:</p>
+<ul>
+<li>Az elégséges megszerzéséhez az Alapfeladatot kell megoldani.</li>
+<li>Az Alapfeladat megoldása után tetszőleges bővítményt lehet választani. Mindegyik bővítmény helyes elkészítése eggyel növeli a megszerzett gyakorlati jegyet.
+<ul>
+<li>A bővítmények egymástól függetlenek.</li>
+</ul></li>
+</ul>
+<p>Használható segédanyagok:</p>
+<ul>
+<li>Egy <a href="TODO%20TODO">letölthető zip</a>, amely tartalmazza
+<ul>
+<li>az alapfeladathoz a kiindulási fájlt</li>
+<li>a JUnit tesztelő <code>jar</code> fájljait</li>
+</ul></li>
+<li><a href="https://bead.inf.elte.hu/files/java/api/index.html">Java dokumentáció</a></li>
+<li>Legfeljebb egy üres lap és toll.</li>
+</ul>
+<h1 id="a-feladat-összefoglaló-leírása">A feladat összefoglaló leírása</h1>
+<p>Egy városban útvonalakat újítanak fel. Az útvonalak számozott szakaszokra vannak felosztva.</p>
+<h1 id="a-feladat-részletes-ismertetése">A feladat részletes ismertetése</h1>
+<h2 id="alapfeladat-elégséges">Alapfeladat (elégséges)</h2>
+<p>A letöltésben szereplő <code>TransportationController</code> osztály kódja hiányos és helytelen, ebben a feladatrészben ezt kell javítani.</p>
+<ul>
+<li>A javítások csak olyan mértékben módosítsák a kódot, amennyire ez feltétlenül szükséges.</li>
+<li>A fájlban <code>7</code> darab hiba van.
+<ul>
+<li>Azokat a hibákat, amelyek a fordítást akadályozzák, <strong>mind javítani kell</strong>.</li>
+<li>A többi hiba közül <strong>legfeljebb egyet szabad elvéteni</strong>.</li>
+<li>Az adattag felvételével járó módosítások nincsenek beleszámítva a <code>7</code> hibába.</li>
+<li>A fájlt a megfelelő könyvtárba kell helyezni, ez sincsen beleszámítva a <code>7</code> hibába.</li>
+</ul></li>
+</ul>
+<p>Az osztálynak legyen egy rejtett <code>repairs</code> adattagja, amely szövegekhez rendelje hozzá egész számok egy-egy halmazát. A szövegek az útvonalakat nevezik meg, a hozzájuk rendelt halmaz elemei pedig azt mutatják, hogy az adott útvonalon melyik szakaszok javítandók.</p>
+<p>Az osztályban egy metódus szerepel, <code>readLines</code>, amelynek a következő az elvárt működése.</p>
+<ul>
+<li>Bemenetként egy <code>Scanner</code> paramétert kap, ennek a tartalmát szövegesen olvassa ki.
+<ul>
+<li>A tartalom egy sorban egy szám (<code>repairCount</code>), majd ezt <code>repairCount</code> további sor követi, amelyek egy szót és két pozitív egész számot tartalmaznak szóközökkel elválasztva.
+<ul>
+<li>A sor eleji szó az útvonalat nevezi meg. Nincsen megkötés rá.</li>
+<li>Különböző sorok vonatkozhatnak ugyanarra az útvonalra.</li>
+<li>Az egész számok a felújított szakaszok kezdetét és végét mutatják. A végpontokat is felújítják.</li>
+</ul></li>
+<li><p>Példa:</p>
+<pre><code>4
+29Y 4 5
+Gamma 7 8
+29Y 2 3
+Gamma 11 11</code></pre></li>
+<li>A példában tehát a <code>29Y</code> útvonal <code>2</code>, <code>3</code>, <code>4</code> és <code>5</code> szakaszait, valamint a <code>Gamma</code> útvonal <code>7</code>, <code>8</code> és <code>11</code> szakaszait újítják fel.</li>
+</ul></li>
+<li>A <code>readLines</code> metódus kiolvassa <code>repairCount</code> értékét, majd feldolgozza a következő <code>repairCount</code> sort.
+<ul>
+<li>Azt a sort, amelyik nem pontosan három részre bomlik a szóközök mentén, figyelmen kívül kell hagyni.</li>
+<li>Egyébként feltételezhető, hogy minden adat helyes, nem kell további ellenőrzéseket végezni. (Pl. <code>repairCount</code> mindig külön sorban érkezik, a sorok első adata szó, a többi adat pozitív egész szám, az első szám nem nagyobb a másodiknál stb.)</li>
+</ul></li>
+<li>A sorok első szavával megnevezett útvonalat kell bővíteni.
+<ul>
+<li>A két szám közötti zárt intervallum minden elemét vegyük fel sorban a <code>repairs</code> adattagban az útvonalhoz tartozó halmazba.
+<ul>
+<li>Ha a halmaz még nem létezik, mert még nem szerepelt ilyen vonal, természetesen létre kell hozni.</li>
+</ul></li>
+<li>Ha a halmaz már tartalmazza az intervallum valamelyik elemét, akkor váltódjon ki egy <code>TransportationException</code> úgy, ahogy le van írva a kódban.
+<ul>
+<li>Ez a kivételfajta legyen ugyanebben a csomagban. A konstruktora vegyen át egy magyarázó szöveget, és a bázisosztály szöveges konstruktorát hívja meg.</li>
+<li>A kivétel kiváltásával a <code>Scanner</code> feldolgozása megszakad, ezzel most nem törődünk.</li>
+</ul></li>
+</ul></li>
+<li>A <code>Scanner</code> objektumot nem kell bezárni.</li>
+</ul>
+<p>Készüljenek el továbbá a következő lekérdező metódusok:</p>
+<ul>
+<li><code>getNumberOfLines()</code>: a betöltött útvonalak száma</li>
+<li><code>sizeOf(&quot;29Y&quot;)</code>: a megadott nevű útvonalhoz felvett javítások összes száma, a példában szereplő <code>29Y</code> útvonalra <code>6</code>
+<ul>
+<li>ha a megadott nevű útvonal nem létezik, váltódjon ki <code>TransportationException</code> ilyen üzenettel: <code>&quot;Line 29Y is unknown&quot;</code></li>
+</ul></li>
+</ul>
+<p>Az osztályhoz készüljön JUnit alapú tesztelő, <code>TransportationTest</code> a <code>transportation.test</code> osztályban. A tesztelő mindegyik esete hívja meg a <code>readLines</code> metódust úgy, hogy előkészít neki egy <code>Scanner</code> objektumot; a <code>Scanner</code> kapjon szöveges paramétert az alábbi leírások szerint. A tesztelő vizsgálja a következő eseteket (a sor elején a tesztelő metódusok nevei állnak):</p>
+<ul>
+<li><code>noLines</code>: <code>0</code> darab útvonal szerepel, ha a <code>Scanner</code> olyan szöveget kap, amelyben <code>repairCount</code> értéke <code>0</code></li>
+<li><code>exampleLines</code>: a fenti példára az útvonalak száma <code>2</code></li>
+<li><code>exampleLineSize_29Y</code>, <code>exampleLineSize_Gamma</code>: a fenti példa útvonalainak hosszát ellenőrzik (<code>4</code> és <code>3</code>)</li>
+<li><code>wrongLine</code>: ha az <code>InvalidLine</code> hosszát kérjük le, akkor <code>TransportationException</code> váltódik ki</li>
+</ul>
+<p>Emlékeztető: a JUnit futtatása, ha a tesztesetek osztálya a névtelen csomagba tartozó <code>SimpleTest</code>:</p>
+<div class="sourceCode"><pre class="sourceCode .bash"><code class="sourceCode bash"><span class="ex">javac</span> -cp .:junit-4.12.jar:hamcrest-core-1.3.jar SimpleTest.java
+<span class="ex">java</span>  -cp .:junit-4.12.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore SimpleTest</code></pre></div>
+<h2 id="bővítés-öröklődés">Bővítés: öröklődés</h2>
+<p>Készüljön el az alábbi két művelet is a <code>TransportationController</code> osztályba:</p>
+<ul>
+<li><code>isUnderRepair(&quot;29Y&quot;, 4)</code>: megadja, hogy a <code>29Y</code> vonalon javítják-e a <code>4</code> azonosítójú szakaszt (igen)</li>
+<li><code>isOperational(&quot;Gamma&quot;, 9, 12)</code>: megadja, hogy használható-e a <code>29Y</code> vonalon a megadott szakasz
+<ul>
+<li>Akkor használható, ha a paraméterekben megadott zárt intervallum egyik szakaszát sem javítják.</li>
+<li>A megadott paraméterekkel a válasz hamis, mert a <code>11</code> szakaszt javítják, de például <code>isOperational(&quot;Gamma&quot;, 9, 10)</code> igazat ad.</li>
+</ul></li>
+</ul>
+<p>Készüljön el a <code>TransportationController</code> osztály leszármazottja, a <code>StrictTransportationController</code>, amely működjön úgy, mint a bázisosztálya, azonban a legkisebb és a legnagyobb indexű szakasz között minden szakasz minősüljön javítás alatt állónak.</p>
+<ul>
+<li>Tipp: a legkisebb indexű szakaszt úgy könnyű megtalálni, ha a <code>Set</code>-ből egy <code>TreeSet</code>-et készítünk, majd arra meghívjuk a <code>ceiling(Integer.MIN_VALUE)</code> műveletet; a legnagyobb értékhez <code>floor(Integer.MAX_VALUE)</code> használható.</li>
+<li>A megörökölt <code>sizeOf</code>, <code>isUnderRepair</code> és <code>isOperational</code> metódusok működjenek eszerint.</li>
+<li>Példa: a fenti példában tehát a <code>Gamma</code> vonal <code>9</code> és <code>10</code> eleme is javítás alattinak tekintendő, ha egy <code>StrictTransportationController</code> objektumba töltjük az adatokat.
+<ul>
+<li><code>isOperational(&quot;Gamma&quot;, 9, 10)</code> ezért hamisat ad.</li>
+</ul></li>
+</ul>
+<p>A tesztelő ellenőrizze egy-egy tesztesettel, hogy a <code>sizeOf</code>, <code>isUnderRepair</code> és <code>isOperational</code> különbözőképpen működik <code>TransportationController</code> és <code>StrictTransportationController</code> használatával.</p>
+<h2 id="bővítés-egyenlőség-klónozás">Bővítés: egyenlőség, klónozás</h2>
+<p>A <code>TransportationController</code> osztályra legyen értelmezett az egyenlőségvizsgálat és a klónozás.</p>
+<p>Akkor tekintsünk két példányt egyenlőnek, ha ugyanazokon a vonalakon ugyanazok a szakaszok javítandók benne. Az egyenlőségvizsgálat mellett azt a másik metódust is meg kell (értelemszerűen) valósítani, ami szerződéses viszonyban áll vele. Mindkét művelet implementálása során kihasználható, hogy a könyvtári típusokra definiálták ezeket a műveleteket.</p>
+<ul>
+<li><p>Legyen egy <code>differentConfig</code> teszteset, amely két különböző módon betöltött, de végül egyenlő <code>TransportationController</code> egyenlőségét vizsgálja. Például a fenti példa és az alábbi egyenlő:</p>
+<pre><code>6
+29Y 5 5
+Gamma 8 8
+Gamma 7 7
+29Y 3 4
+29Y 2 2
+Gamma 11 11</code></pre></li>
+</ul>
+<p>A <code>TransportationController</code> osztály legyen klónozható; a klónban értelemszerűen legyenek meg ugyanazok a vonalak ugyanazokkal a szakaszokkal, mint az eredetiben, de váljanak teljesen külön.</p>
+<ul>
+<li>Tipp: a halmazokból lehet másolatot készíteni annak a konstruktornak a meghívásával, amelyik egy halmazt vár paraméterként.</li>
+</ul>
+<p>A következő új tesztesetek vizsgálják ennek helyes működését:</p>
+<ul>
+<li><code>cloneNotSame</code>: a klónozott objektum nem ugyanaz, mint az eredeti</li>
+<li><code>cloneEquals</code>: a klónozott objektum egyenlő tartalmát tekintve az eredetivel</li>
+<li><code>cloneSeparate</code>: ha a klónozás után az eredeti objektumba még további szakaszokat töltünk be, az nem befolyásolja a klónt</li>
+</ul>
+<h2 id="bővítés-összehasonlíthatóság">Bővítés: összehasonlíthatóság</h2>
+<p>Két <code>TransportationController</code> legyen egymással összehasonlítható a következő módon.</p>
+<ul>
+<li>Ha valamelyikben több vonal van, az a nagyobb. (1)</li>
+<li>Különben rendezzük a vonalak neveit ábécésorrendbe.
+<ul>
+<li>A <code>keySet()</code> metódussal lehet a neveket lekérni.</li>
+<li>A rendezéshez célszerű betölteni őket egy-egy listába.</li>
+</ul></li>
+<li>Ha ugyanannyi vonal van mindkettőben, de nem pontosan ugyanazok a vonalak, akkor a következő a teendő:
+<ul>
+<li>Keressük meg az első pontot, ahol eltérnek.</li>
+<li>Ezek közül a lexikografikusan nagyobb legyen a nagyobb. (2)</li>
+</ul></li>
+<li>Ha ugyanazok a vonalak, akkor:
+<ul>
+<li>A berendezett neveken sorban haladva, ha bármelyik névnél van eltérés a javítások számában, akkor a kisebb javításszámú legyen a nagyobb. (3)</li>
+<li>Ha nincsen egyik névnél sem különbség, akkor a két <code>TransportationController</code> egyenlő. (4)</li>
+</ul></li>
+</ul>
+<p>A <code>test1</code>, <code>test2</code>, <code>test3</code> és <code>test4</code> tesztesetek próbáljanak ki olyan eseteket, amelyek a zárójelben mutatott pontok alapján hozzák meg a döntést.</p>
+</body>
+</html>
